@@ -1,6 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 header {
   min-height: 100vh;
@@ -23,14 +27,58 @@ nav {
   margin-top: 20px;
   flex: 1;
   text-align: right;
+  position: relative;
+  margin-right: 30px;
 }
 .nav-links ul li {
   display: inline-block;
   list-style: none;
   padding: 8px 12px;
+  cursor: pointer;
 }
 .nav-links ul li a {
   text-decoration: none;
   color: white;
   font-size: 13px;
+}
+.nav-links ul li::after {
+  height: 2px;
+  width: 0%;
+  background: #f44336;
+  content: "";
+  display: block;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.text-box a {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.text-box a:hover {
+  border: none;
+  background: #f44336;
+  transition: 0.5s;
 }
