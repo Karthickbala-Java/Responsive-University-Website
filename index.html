@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +27,8 @@
         /></a>
         <div class="nav-links">
           <ul>
+            <i class="fa-solid fa-xmark close-icon" onclick="hideMenu()"></i>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="courses.html">Courses</a></li>
@@ -27,6 +36,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+        <i class="fa-solid fa-bars bar-icon" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>World's Biggest University</h1>
@@ -39,5 +49,17 @@
         <a href="#">Visit us to know more</a>
       </div>
     </header>
+    <script>
+      function showMenu() {
+        let navLinks = document.querySelector(".nav-links");
+        navLinks.style.display = "block";
+        navLinks.style.transition = "0.5s";
+      }
+      function hideMenu() {
+        let navLinks = document.querySelector(".nav-links");
+        navLinks.style.display = "none";
+        navLinks.style.transition = "0.5s";
+      }
+    </script>
   </body>
 </html>

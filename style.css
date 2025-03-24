@@ -82,7 +82,13 @@ nav {
   background: #f44336;
   transition: 0.5s;
 }
-@media (max-width: 500px) {
+nav .fa-solid {
+  display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 700px) {
   .text-box h1 {
     font-size: 32px;
   }
@@ -94,12 +100,36 @@ nav {
     display: block;
   }
   .nav-links {
-    position: absolute;
+    display: none;
     background-color: #f44336;
-    right: 0;
-    width: 40%;
     height: 100vh;
     z-index: 100;
-    display: none;
+    text-align: left;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 20%;
+  }
+  nav .fa-solid {
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .nav-links ul {
+    padding: 15px;
+  }
+  .nav-links ul li {
+    padding-top: 10px;
+  }
+  .close-icon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+  .bar-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
   }
 }
