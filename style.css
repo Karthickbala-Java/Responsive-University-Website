@@ -82,3 +82,24 @@ nav {
   background: #f44336;
   transition: 0.5s;
 }
+@media (max-width: 500px) {
+  .text-box h1 {
+    font-size: 32px;
+  }
+  .text-box p {
+    font-size: 13px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: #f44336;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+  }
+}
