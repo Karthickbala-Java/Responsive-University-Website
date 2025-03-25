@@ -1,0 +1,24 @@
+{
+  "name": "sass-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "saas ./sass/index.scss ./css/style1.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karthickbala-Java/Responsive-University-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karthickbala-Java/Responsive-University-Website/issues"
+  },
+  "homepage": "https://github.com/Karthickbala-Java/Responsive-University-Website#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}
