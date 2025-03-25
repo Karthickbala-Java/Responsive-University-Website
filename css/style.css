@@ -93,6 +93,7 @@ nav .fa-solid {
 .course {
   padding-top: 50px;
   text-align: center;
+  margin: 20px 20px;
 }
 .course h1 {
   font-size: 36px;
@@ -130,8 +131,153 @@ nav .fa-solid {
 .course-col:hover {
   box-shadow: 0 0 20px 0 rgba(104, 104, 104, 0.2);
 }
-/* Media Queries */
 
+/* Campus Section */
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.campus h3,
+.facility h1 {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.campus p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.campus-col img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.campus-col {
+  margin-left: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.campus-col .layer {
+  display: none;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.campus-col:hover .layer {
+  background: #1e1e1e7e;
+  display: flex;
+  color: white;
+}
+.layer h3 {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  opacity: 0;
+  transition: ease 0.5s;
+}
+.layer:hover h3 {
+  top: 50%;
+  opacity: 1;
+}
+.campus {
+  margin: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facility {
+  text-align: center;
+  margin-top: 100px;
+  margin: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facility h1 {
+  font-weight: 600;
+}
+
+.facility .row3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility-column {
+  flex-basis: 31%;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 30px 30px;
+  margin-right: 10px;
+}
+.facility-column p {
+  font-weight: 400;
+  font-size: 400;
+  text-align: left;
+}
+.facility-column img {
+  width: 100%;
+  border-radius: 10px;
+}
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.testimonials p {
+  font-weight: 400;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.row4 {
+  display: flex;
+  flex-direction: row;
+}
+.testimonial-col {
+  display: flex;
+  flex-basis: 40%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff3f3;
+  text-align: left;
+  margin-right: 20px;
+}
+.testimonial-col p {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.testimonial-col h3 {
+  margin-top: 10px;
+  display: block;
+}
+.testimonial-col img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 25px;
+  height: 50px;
+}
+.testimonial-col .fa-solid,
+.fa-regular {
+  font-size: 14px;
+  color: #f44336;
+}
+/* Media Queries */
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 32px;
@@ -184,7 +330,23 @@ nav .fa-solid {
     font-size: 12px;
   }
   .row {
-    justify-content: center;
+    flex-direction: column;
+  }
+  .campus-col {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .facility .row3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+  }
+  .testimonial-col {
+    flex-basis: 100%;
+  }
+  .row4 {
     flex-direction: column;
   }
 }
