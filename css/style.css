@@ -277,6 +277,41 @@ nav .fa-solid {
   font-size: 14px;
   color: #f44336;
 }
+.cta {
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../eduford_img/eduford_img/banner2.jpg);
+  padding: 200px 0;
+  position: relative;
+  margin-bottom: 50px;
+}
+.cta img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.cta h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta a {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta a:hover {
+  background-color: #f44336;
+}
 /* Media Queries */
 @media (max-width: 700px) {
   .text-box h1 {
@@ -348,5 +383,14 @@ nav .fa-solid {
   }
   .row4 {
     flex-direction: column;
+  }
+  .cta h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  .cta a {
+    margin-top: 5px;
+    font-size: 12px;
   }
 }
