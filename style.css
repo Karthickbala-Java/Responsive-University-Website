@@ -85,6 +85,9 @@ nav {
 nav .fa-solid {
   display: none;
 }
+.nav-links ul a {
+  cursor: pointer;
+}
 
 /* Media Queries */
 
@@ -107,7 +110,7 @@ nav .fa-solid {
     text-align: left;
     margin-right: 0px;
     margin-top: 0px;
-    width: 20%;
+    flex: none;
   }
   nav .fa-solid {
     display: block;
