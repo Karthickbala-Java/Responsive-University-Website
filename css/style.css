@@ -312,6 +312,62 @@ nav .fa-solid {
 .cta a:hover {
   background-color: #f44336;
 }
+.sub-header {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../eduford_img/eduford_img/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.sub-header h1 {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 36px;
+  font-weight: 600;
+}
+.aboutUs .row {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.about-col {
+  flex-basis: 40%;
+  padding: 30px 2px;
+  text-align: left;
+}
+.about-col h1 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.about-col p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.about-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-btn {
+  padding: 10px 20px;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 2px;
+  font-weight: 400;
+  background: transparent;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.about-btn:hover {
+  background: #f44336;
+  color: white;
+}
 /* Media Queries */
 @media (max-width: 700px) {
   .text-box h1 {
@@ -385,12 +441,17 @@ nav .fa-solid {
     flex-direction: column;
   }
   .cta h1 {
-    font-size: 20px;
+    text-align: center;
+    font-size: 16px;
     margin-bottom: 40px;
     padding: 0;
   }
   .cta a {
     margin-top: 5px;
     font-size: 12px;
+  }
+  .about-btn {
+    margin-top: 20px;
+    margin-left: 30px;
   }
 }

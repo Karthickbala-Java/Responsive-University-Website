@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <header>
+    <section class="sub-header">
       <nav>
         <a href="index.html"
           ><img src="../eduford_img/eduford_img/logo.png" alt=""
@@ -29,26 +29,18 @@
           <ul>
             <i class="fa-solid fa-xmark close-icon" onclick="hideMenu()"></i>
 
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./course.html">Courses</a></li>
+            <li><a href="courses.html">Courses</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <i class="fa-solid fa-bars bar-icon" onclick="showMenu()"></i>
       </nav>
-      <div class="text-box">
-        <h1>World's Biggest University</h1>
-        <p>
-          Welcome to the World's Biggest University, a place where knowledge
-          knows no bounds and opportunities are limitless. We are dedicated to
-          fostering a vibrant and inclusive learning environment that empowers
-          students to achieve their full potential.
-        </p>
-        <a href="#">Visit us to know more</a>
-      </div>
-    </header>
+      <h1>Our Courses</h1>
+    </section>
+    <!--course section -->
     <!--Course Section-->
     <section class="course">
       <h1>What we offer</h1>
@@ -86,27 +78,6 @@
         </div>
       </div>
     </section>
-    <!--Campus Section -->
-    <section class="campus">
-      <h3>Our Global campus</h3>
-      <p>Our campuses are located in London,NewYork,washington</p>
-    </section>
-    <div class="row">
-      <div class="campus-col">
-        <img src="../eduford_img/eduford_img/london.png" alt="" />
-        <div class="layer"><h3 class="cn">London</h3></div>
-      </div>
-      <div class="campus-col">
-        <img src="../eduford_img/eduford_img/newyork.png" alt="" />
-        <div class="layer"><h3 class="cn">NewYork</h3></div>
-      </div>
-      <div class="campus-col">
-        <img src="../eduford_img/eduford_img/washington.png" alt="" />
-        <div class="layer"><h3 class="cn">washington</h3></div>
-      </div>
-    </div>
-
-    <!--Facility Section-->
     <section class="facility">
       <h1>Our Facilities</h1>
       <div class="row3">
@@ -136,60 +107,5 @@
         </div>
       </div>
     </section>
-    <!--Testimonials-->
-    <section class="testimonials">
-      <h1>What our Student Says</h1>
-      <p>
-        Our students love the supportive community and excellent academic
-        resources.
-      </p>
-      <div class="row4">
-        <div class="testimonial-col">
-          <img src="../eduford_img/eduford_img/user1.jpg" alt="" />
-          <div class="details">
-            <p>
-              The professors are knowledgeable and approachable, and the
-              coursework is challenging and engaging.
-            </p>
-            <h3>John Doe</h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-regular fa-star"></i>
-          </div>
-        </div>
-        <div class="testimonial-col">
-          <img src="../eduford_img/eduford_img/user2.jpg" alt="" />
-          <div class="details">
-            <p>
-              The professors are knowledgeable and approachable, and the
-              coursework is challenging and engaging.
-            </p>
-            <h3>David Byer</h3>
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Call to action -->
-
-    <section class="cta">
-      <h1>Enroll for our various online course</h1>
-      <a href="#">Contact us</a>
-    </section>
-    <script>
-      function showMenu() {
-        let navLinks = document.querySelector(".nav-links");
-        navLinks.style.display = "block";
-        navLinks.style.transition = "0.5s";
-        navLinks.style.width = "40%";
-      }
-      function hideMenu() {
-        let navLinks = document.querySelector(".nav-links");
-        navLinks.style.display = "none";
-        navLinks.style.transition = "0.5s";
-      }
-    </script>
   </body>
 </html>
